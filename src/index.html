@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru-RU">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Синтез агро</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="masthead">
+		<div class="header-top">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10 p-r-0">
+						<div class="row align-items-center justify-content-center">
+							<div class="column-lg-3">
+								<img src="img/logo-header.svg" height="80" alt="logo">
+							</div>
+							<div class="column-lg-3 offset-md-1">
+								<span class="logo-text">ТЕХНОЛОГИИ ПИТАНИЯ КУЛЬТУР</span>
+							</div>
+							<div class="column-lg-3 offset-md-1 text-center">
+								<span class="text__phone-number">+7 (989) 800 01 12 <br>+7 (989) 800 01 15</span>
+								<br>
+								<span class="text__email">sintez-agro@mail.ru</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #006aaf">
+			<a class="navbar-brand" href="#">СИНТЕЗ-АРГО</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbar1" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbar1">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">ГЛАВНАЯ<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">О КОМПАНИИ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">ПРОДУКЦИЯ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">НОВОСТИ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">КОНТАКТЫ</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-toggle="modal" data-target="#orderCallback">Заказать звонок</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="header-footer">
+			<div class="container">
+				<div class="row justify-content-center align-items-center">
+					<div class="column-md-12">
+						<ul class="menu">
+							<li class="menu-item"><a href="#">ГЛАВНАЯ</a></li>
+							<li class="menu-item"><a href="#">О КОМПАНИИ</a></li>
+							<li class="menu-item"><a href="#">ПРОДУКЦИЯ</a></li>
+							<li class="menu-item"><a href="#">НОВОСТИ</a></li>
+							<li class="menu-item"><a href="#">КОНТАКТЫ</a></li>
+							<li class="menu-item callback"><a href="#" data-toggle="modal" data-target="#orderCallback">Заказать звонок</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Modal -->
+	<div class="modal fade" id="orderCallback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form id="contactForm" action="handler.php" method="post">
+						<div class="form-group">
+							<label for="name">Ваше имя:</label>
+							<input id="name" class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="form-group">
+							<label for="email">Ваш E-mail:</label>
+							<input id="email" class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
+						</div>
+						<div class="form-group">
+							<label for="phone">Ваш телефон:</label>
+							<input id="phone" class="form-control" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
+						</div>
+						<div class="form-group">
+							<label for="message">Текст сообщения:</label>
+							<textarea id="message" class="form-control" required name="message" rows="4"></textarea>
+						</div>
+						<div class="form-group form-check">
+							<input id="check" class="form-check-input" checked type="checkbox">
+							<label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
+						</div>
+						<button id="button" class="btn btn-success" type="submit">Отправить</button>
+						<div class="result">
+							<span id="answer"></span>
+							<span id="loader" style="display:none"><img src="img/loader.gif" alt=""></span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-for-slader">
+		<div class="slider">
+			<!-- slides -->
+			<div class="slider__slides">
+				<div class="slide s--active">
+					<div class="slide__inner">
+						<div class="slide__content">
+							<p class="slide__text">Нутриванты - </p>
+							<h2 class="slide__heading">листовая подкормка культур</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="slide__inner">
+						<div class="slide__content">
+							<p class="slide__text">Препараты для роста и питания –  </p>
+							<h2 class="slide__heading">зерновые, кормовые,  овощные культуры</h2>
+						</div>
+					</div>
+				</div>
+				<div class="slide s--prev">
+					<div class="slide__inner">
+						<div class="slide__content">
+							<p class="slide__text">Биостимуляторы и антистрессанты –</p>
+							<h2 class="slide__heading">эффективное развитие и рост</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- slides end -->
+			<div class="slider__control">
+				<div class="slider__control-line"></div>
+				<div class="slider__control-line"></div>
+			</div>
+			<div class="slider__control slider__control--right m--right">
+				<div class="slider__control-line"></div>
+				<div class="slider__control-line"></div>
+			</div>
+		</div>
+	</div>
+
+	<section class="product m-t-45">
+		<div class="container text-center">
+			<h3 class="title-of-section">ПРОДУКЦИЯ</h3>
+			<div class="row justify-content-center align-items-center m-t-30">
+				<div class="column-md-4">
+					<div class="block-product">
+						<div class="content--img">
+							<img src="img/nutrivants.jpg" alt="">
+						</div>
+						<div class="block-content-text">
+							<a href="">Нутриванты</a>
+						</div>
+					</div>
+				</div>
+				<div class="column-md-4">
+					<div class="block-product">
+						<div class="content--img">
+							<img src="img/antistressants.jpg" alt="">
+						</div>
+						<div class="block-content-text">
+							<a href="">Антистрессанты</a>
+						</div>
+					</div>
+				</div>
+				<div class="column-md-4">
+					<div class="block-product">
+						<div class="content--img">
+							<img src="img/biostimulyators.jpg" alt="">
+						</div>
+						<div class="block-content-text">
+							<a href="">Биостимуляторы</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center align-items-center">
+				<div class="column-md-4">
+					<div class="block-product">
+						<div class="content--img">
+							<img src="img/correctors.jpg" alt="">
+						</div>
+						<div class="block-content-text">
+							<a href="">Корреторы<br>  дефицита<br>  элементов питания</a>
+						</div>
+					</div>
+				</div>
+				<div class="column-md-4">
+					<div class="block-product">
+						<div class="content--img">
+							<img src="img/fosfits.jpg" alt="">
+						</div>
+						<div class="block-content-text">
+							<a href="">Фосфиты</a>
+						</div>
+					</div>
+				</div>
+				<div class="column-md-4">
+					<div class="block-product">
+						<div class="content--img">
+							<img src="img/b_udobreniya.jpg" alt="">
+						</div>
+						<div class="block-content-text">
+							<a href="">Удобрения</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about m-t-50">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 p-0">
+					<div class="block--about">
+						<h3 class="title-of-section title text-center">О КОМПАНИИ</h3>
+						<div class="block-text-about text-left m-t-40">
+							<p>ООО «ЛСВ-Транс» производит диагностику и ремонт дизельных форсунок (инжекторов) для легковых и грузовых автомобилей, микроавтобусов, тракторов и спецтехники как оснащенных системой впрыска Common Rail</p>
+							<br>
+							<p>таких производителей как BOSCH, DELPHI, DENSO, VDO, так и классическими системами впрыска. <br>
+								<ul>
+									<li>Все работы по диагностике и ремонту форсунок Common</li>
+									<li>Rail проводят специалисты, которые имеют высокую квалификацию, что подтверждено сертификатами.</li>
+								</ul>
+							</p>
+						</div>
+						<div class="block-btn text-left m-t-20">
+							<a href="" class="btn btn-default">Подробнее о компании</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="our-advantage m-t-50">
+		<div class="container">
+			<h3 class="title-of-section text-center">Наши преимущества</h3>
+			<div class="row justify-content-center align-items-center m-t-30">
+				<div class="col-lg-10 p-0">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-6 p-r-5 pad-bot">
+							<div class="container__img-text">
+								<div class="container--img">
+									<span class="icons-our-advantage"><i class="icons-advantage icon-hand"></i></span>
+								</div>
+								<div class="container--text">
+									<p>Работаем <br>  без посредников </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 p-l-5 pad-bot">
+							<div class="container__img-text">
+								<div class="container--img">
+									<span class="icons-our-advantage"><i class="icons-advantage icon-medal"></i></span>
+								</div>
+								<div class="container--text">
+									<p>Соотетствие продуктов <br> мировым стандартам <br> качества </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-6 p-r-5 pad-bot">
+							<div class="container__img-text">
+								<div class="container--img">
+									<span class="icons-our-advantage"><i class="icons-advantage icon-green"></i></span>
+								</div>
+								<div class="container--text">
+									<p>Сервис, консультация, <br> сопровождение </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 p-l-5 pad-bot">
+							<div class="container__img-text">
+								<div class="container--img">
+									<span class="icons-our-advantage"><i class="icons-advantage icon-like"></i></span>
+								</div>
+								<div class="container--text">
+									<p>Поставки от ведущих <br> производителей</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news m-t-50 m-b-40">
+		<div class="container">
+			<h3 class="title-of-section text-center">НОВОСТИ</h3>
+			<div class="row justify-content-center align-items-center m-t-30">
+				<div class="col-lg-10 p-0">
+					<div class="row justify-content-center fl">
+						<div class="col-lg-4 col-11 col-sm-10 col-md-9">
+							<div class="block-news">
+								<div class="container__image--news">
+									<img src="img/news-veget.jpg" alt="">
+								</div>
+								<div class="container__text-news">
+									<span class="data">28.03.2018</span>
+									<a href=""><span class="text--news">Органические продукты вошли в топ-10 мировых потребительских трендов</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-11 col-sm-10 col-md-9">
+							<div class="block-news">
+								<div class="container__image--news">
+									<img src="img/news-track.jpg" alt="">
+								</div>
+								<div class="container__text-news">
+									<span class="data">28.03.2018</span>
+									<a href=""><span class="text--news">Сибирские аграрии с тревогой ждут весеннюю посевную-2018</span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-11 col-sm-10 col-md-9">
+							<div class="block-news">
+								<div class="container__image--news">
+									<img src="img/news-fruit.jpg" alt="">
+								</div>
+								<div class="container__text-news">
+									<span class="data">28.03.2018</span>
+									<a href=""><span class="text--news">Суперинтенсивные сады закладывают в Ставропольском крае </span></a>
+								</div>
+							</div>
+						</div>
+						<div class="block-btn m-l-40 m-t-30 col-md-3">
+							<a href="" class="btn btn-default">Все новости</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="mastfoot elem-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 p-0">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-lg-12 m-t-20 d-flex justify-content-center align-items-center p-0">
+							<div class="footer-box box__copyright m-l-0">
+								<span class="copyright">«Синтез Агро», © 2018 г.</span>
+							</div>
+							<div class="footer-box box-tel">
+								<span class="text__phone-number">+7 (989) 800 01 12 </span>
+								<span class="text__phone-number m-l-20">+7 (989) 800 01 15</span>
+							</div>
+							<div class="footer-box block-btn">
+								<a href="" class="btn btn-default" data-toggle="modal" data-target="#orderCallback">Заказать звонок</a>
+							</div>
+							<div class="footer-box box__btn-social">
+								<a href="" class="btn-social"><i class="icon icon-vk"></i></a>
+								<a href="" class="btn-social"><i class="icon icon-fb"></i></a>
+								<a href="" class="btn-social"><i class="icon icon-ok"></i></a>
+								<a href="" class="btn-social"><i class="icon icon-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-end align-items-center">
+						<div class="col-lg-9 m-t-25 d-flex justify-content-start align-items-center p-0">
+							<div class="footer-box m-l-0">
+								<span class="adress">г. Славянск-на-Кубани, ул. Стаханова 197/1, офис 404</span>
+							</div>
+							<div class="footer-box box-email">
+								<span class="text__email">sintez-agro@mail.ru</span>
+							</div>
+							<div class="footer-box box-voodoo">
+								<span class="voodoo">создание сайта<a href="#"> voodoo.ru</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="mastfoot small-dev">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-10">
+					<div class="footer-box box__copyright">
+						<span class="copyright">«Синтез Агро», © 2018 г.</span>
+					</div>
+					<div class="footer-box block-btn">
+						<a href="" class="btn btn-default" data-toggle="modal" data-target="#orderCallback">Заказать звонок</a>
+					</div>
+					<div class="footer-box box__btn-social">
+						<a href="" class="btn-social"><i class="icon icon-vk"></i></a>
+						<a href="" class="btn-social"><i class="icon icon-fb"></i></a>
+						<a href="" class="btn-social"><i class="icon icon-ok"></i></a>
+						<a href="" class="btn-social"><i class="icon icon-instagram"></i></a>
+					</div>
+					<div class="footer-box">
+						<span class="adress">г. Славянск-на-Кубани, ул. Стаханова 197/1, офис 404</span>
+					</div>
+					<div class="footer-box box-email">
+						<span class="text__email">sintez-agro@mail.ru</span>
+					</div>
+					<div class="footer-box box-voodoo">
+						<span class="voodoo">создание сайта<a href="#"> voodoo.ru</a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

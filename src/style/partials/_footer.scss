@@ -1,0 +1,61 @@
+.mastfoot {
+	background-color: $bg-footer-color;
+	padding-bottom: 20px;
+
+	.footer-box {
+		margin-left: 60px;
+
+		.adress {
+			font-size: 14px;
+			color: $grey-color;
+		}
+
+		.voodoo {
+			font-size: 12px;
+			color: $grey-color;
+
+			a {
+				color: $voodoo-linl-color;
+			}
+		}
+	}
+
+	.box__copyright {
+
+		.copyright {
+			font-size: 12px;
+			color: $grey-color;
+		}
+	}
+
+	.box-tel {
+
+		.text__phone-number {
+			font-size: 16px;
+			color: $l-black;
+		}
+	}
+
+	.block-btn {
+
+		.btn {
+			font-size: 14px;
+			color: #1f1c17;
+			padding: 7px 20px;
+			border-color: $fo-border-btn-color;
+		}
+	}
+
+	.box-email {
+		margin-left: 10px;
+
+		.text__email {
+			font-size: 14px;
+			color: $grey-color;
+		}
+	}
+
+	.box-voodoo {
+		margin-left: 85px;
+	}
+}

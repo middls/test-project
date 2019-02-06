@@ -1,0 +1,67 @@
+.icon-icons-social {
+	background-image: url('../../img/icons-social-sprite.png');
+	background-position: 0px 0px;
+	width: 186px;
+	height: 39px;
+}
+
+.icon {
+	display: inline-block;
+	width: 39px;
+	height: 38px;
+	border-radius: 50%;
+	background-image: url('../../img/icons-social-sprite.png');
+	background-position: 0px 0px;
+	transition: background-color 0.5s ease;
+}
+
+.icon-vk {
+	background-position: 0px 0;
+}
+
+.icon-fb {
+	background-position: -49.5px 0;
+}
+.icon-ok {
+	background-position: -101px 0;
+}
+
+.icon-instagram {
+	background-position: 35px 0;
+}
+
+.btn-social:hover .icon {
+	background-color: $white-color;
+}
+
+.icon-icons-advantage {
+  background-image: url('../../img/sprite-advantage.png');
+  background-position: 0px 0px;
+  width: 547px;
+  height: 204px;
+}
+
+.icons-advantage {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	background-image: url('../../img/sprite-advantage.png');
+	background-position: 0px 0px;
+}
+
+.icon-hand {
+	background-position: 0px 3px;
+}
+
+.icon-medal {
+	background-position: 75px 0px;
+}
+
+.icon-green {
+	background-position: -5px 75px;
+}
+
+.icon-like {
+	background-position: 70px -129px;
+}
+

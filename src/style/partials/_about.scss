@@ -1,0 +1,497 @@
+.block--about {
+	background-color: $white-color;
+	padding: 43px 55px 30px 30px;
+
+	.block-text-about {
+		color: $black-color;
+		font-size: 20px;
+		line-height: 1.3;
+
+		li {
+			position: relative;
+			padding-left: 30px;
+		}
+
+		li::before,
+		li::after {
+			content:'';
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			display: block;
+			width: 7px;
+			height: 7px;
+			border: 1px solid $green-color;
+			border-radius: 50%;
+			background-color: $green-color;
+		}
+	}
+
+	.btn {
+		border: 1px solid $border-btn-color;
+		padding: 7px 20px;
+		border-radius: 0;
+		color: #000;
+		font-size: 12px;
+	}
+}
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+@media (max-width: 575px){
+
+	.header-top {
+		padding-bottom: 10px;
+
+		.column-lg-3 {
+
+			.logo-text {
+				font-size: 17px;
+			}
+
+			.text__phone-number {
+				font-size: 24px;
+			}
+
+			.text__email {
+				font-size: 19px;
+			}
+		}
+	}
+
+	.header-footer {
+		display:none;
+	}
+
+	.container-for-slader {
+		display: none;
+	}
+
+	.about {
+
+		.p-0 {
+			padding-right: 15px !important;
+    		padding-left: 15px !important;
+		}
+
+		.block-text-about {
+			font-size: 13px;
+			li {
+
+				&::before,
+				&::after {
+					top: 5px;
+				}
+			}
+		}
+	}
+
+	.our-advantage {
+
+		.pad-bot {
+			padding: 0 15px !important;
+
+			.container__img-text {
+				padding: 20px 16px;
+
+				.container--img {
+
+					.icons-our-advantage {
+
+						.icon-medal {
+							background-position: 87px 0;
+						}
+
+						.icon-like {
+							background-position: 77px -129px;
+						}
+					}
+				}
+
+				.container--text{
+
+					p {
+						font-size: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	.news {
+
+		.block-news {
+			margin-bottom: 10px;
+		}
+	}
+
+	.elem-footer {
+		display: none;
+	}
+
+	.mastfoot {
+
+		.footer-box {
+			margin-top: 10px;
+
+			.copyright {
+				font-size: 13px;
+			}
+
+			.adress {
+				font-size:  13px;
+			}
+		}
+	}
+
+	.box-email {
+		margin-left: 60px !important;
+	}
+
+	.box-voodoo {
+		margin-left: 60px !important;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.header-top {
+		padding-bottom: 10px;
+
+		.column-lg-3 {
+
+			.text__phone-number {
+				font-size: 24px;
+			}
+
+			.text__email {
+				font-size: 19px;
+			}
+
+			.logo-text {
+				font-size: 26px;
+			}
+		}
+	}
+
+	.header-footer {
+		display:none;
+	}
+
+	.container-for-slader {
+			display: none;
+	}
+
+	.news {
+
+		.block-news {
+			margin-bottom: 10px;
+		}
+
+		.block-btn {
+			margin-left: 0 !important;
+		}
+	}
+
+	.our-advantage {
+		.pad-bot {
+			padding: 0 15px !important;
+		}
+	}
+
+	.small-dev {
+		display: none;
+	}
+
+	.mastfoot {
+
+		.footer-box {
+			margin-left: 10px !important;
+
+			.copyright {
+				font-size: 13px;
+			}
+
+			.adress {
+				font-size:  9px !important;
+			}
+		}
+
+		.box-tel {
+
+			.text__phone-number {
+				font-size: 12px !important;
+				margin-left: 0 !important;
+			}
+		}
+
+		.box-email {
+			.text__email {
+				font-size: 12px !important;
+				margin-left: 0;
+			}
+		}
+
+		.box-voodoo {
+			margin-left: 0;
+		}
+
+		.block-btn {
+			display: none;
+		}
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.header-top {
+		padding-bottom: 10px;
+
+		.logo-text {
+			font-size: 26px;
+		}
+
+		.text__phone-number {
+			font-size: 24px;
+		}
+	}
+
+	.header-footer {
+		display:none;
+	}
+
+	.container-for-slader {
+		display: none;
+	}
+
+	.product {
+
+		.block-product {
+
+			.content--img {
+				max-height: 124px !important;
+
+				img {
+					max-width: 230px !important;
+				}
+			}
+
+			.block-content-text {
+
+				a {
+					font-size: 17px;
+
+					&::before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	.our-advantage {
+
+		.pad-bot {
+			padding: 0 15px !important;
+		}
+	}
+
+	.news {
+
+		.block-news {
+			margin-bottom: 10px;
+		}
+
+		.block-btn {
+			margin-left: 40px!important;
+		}
+	}
+
+	.mastfoot {
+
+		.footer-box {
+			margin-left: 35px !important;
+
+			.copyright {
+				font-size: 13px;
+			}
+
+			.adress {
+				font-size: 12px !important;
+			}
+		}
+
+		.block-btn {
+			display: none;
+		}
+
+		.box-tel {
+
+			.text__phone-number {
+
+				margin-left: 0 !important;
+			}
+		}
+
+		.box-email {
+			.text__email {
+				font-size: 12px !important;
+				margin-left: 0;
+			}
+		}
+
+		.box-voodoo {
+			margin-left: 0;
+		}
+
+		.block-btn {
+			display: none;
+		}
+	}
+
+	.small-dev {
+		display: none;
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.header-top {
+
+		img {
+			height: 60px;
+		}
+
+		.logo-text {
+			font-size: 20px;
+		}
+
+		.text__phone-number {
+			font-size: 10px;
+		}
+
+		.text__email {
+			font-size: 9px;
+		}
+	}
+
+	.navbar  {
+		display: none;
+	}
+
+	.header-footer {
+		display: block;
+
+		.menu-item {
+			padding: 17px 26px !important;
+
+			a {
+				font-size: 12px !important;
+			}
+		}
+
+		.callback {
+			padding-left: 52px !important;
+			padding-right: 15px !important;
+
+			&::before {
+				top: 27% !important;
+			}
+		}
+	}
+
+	.container-for-slader {
+		height: 300px;
+
+		.slide__content {
+			top: 27% !important;
+
+			.slide__text {
+				font-size: 17px !important;
+			}
+
+			.slide__heading {
+				font-size: 28px !important;
+			}
+		}
+
+		.slider__control {
+			top: 22% !important;
+		}
+	}
+
+	.our-advantage {
+
+		.container__img-text {
+
+			.container--text {
+
+				p {
+					font-size: 17px !important;
+				}
+			}
+		}
+	}
+
+	.small-dev {
+		display: none;
+	}
+
+	.mastfoot {
+
+		.footer-box {
+			margin-left: 12px !important;
+
+			.copyright {
+				font-size: 13px;
+			}
+
+			.adress {
+				font-size: 12px !important;
+			}
+		}
+
+		.block-btn {
+			display: none;
+		}
+
+		.box-tel {
+
+			.text__phone-number {
+
+				margin-left: 0 !important;
+			}
+		}
+
+		.box-email {
+
+			.text__email {
+				font-size: 12px !important;
+				margin-left: 0;
+			}
+		}
+
+		.box-voodoo {
+			margin-left: 0;
+		}
+
+		.block-btn {
+			display: none;
+		}
+	}
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.navbar  {
+		display: none;
+	}
+
+	.small-dev {
+		display: none;
+	}
+
+	.fl {
+		justify-content: flex-start !important;
+	}
+}

@@ -1,0 +1,52 @@
+.block-product {
+	position: relative;
+	margin: 5px;
+
+	.content--img {
+		max-height: 167px;
+		background-color: $black-color;
+		transition: background-color 0.3s ease-in;
+		img {
+			opacity: 0.84;
+		}
+
+		&:hover {
+			background-color: $hover-img-color;
+			img {
+				opacity: 0.3;
+			}
+		}
+	 }
+
+	.block-content-text {
+		position: absolute;
+		bottom: 30px;
+		left: 20px;
+		z-index: 2;
+		text-align: left;
+		transition: all 0.4s ease-in-out;
+
+		a {
+			position: relative;
+			color: $white-color;
+			font-size: 22px;
+
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 247px;
+				height: 25px;
+				width: 16px;
+				background: url('../../img/arrow-right.png') no-repeat bottom right;
+				background-color: transparent;
+				transition: all 0.4s ease-in-out;
+			}
+
+			&:hover::before {
+				transform: translateX(15px);
+			}
+		}
+	}
+}

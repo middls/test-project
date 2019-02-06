@@ -1,0 +1,22 @@
+// FONTS GOOGLE
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600');
+
+
+// BASE
+@import 'partials/bootstrap.min.css';
+@import 'partials/_parametrs.scss';
+@import 'partials/_base.scss';
+// helpers.scss вспомогательная библиотека margin and padding
+@import 'partials/helpers.scss';
+@import 'partials/sprite.scss';
+
+
+
+// MODULES
+@import 'partials/_header.scss';
+@import 'partials/slider.scss';
+@import 'partials/_production.scss';
+@import 'partials/_about.scss';
+@import 'partials/_our-advantage.scss';
+@import 'partials/_news.scss';
+@import 'partials/_footer';
